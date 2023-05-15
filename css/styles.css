@@ -1,32 +1,44 @@
-.home {
-    margin-top: 8%;
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
 }
 
-.service{
-    margin-top: 8%
+.jumbotron {
+  margin-top: 5rem;
 }
 
-.us{
-    margin-top: 5%;
+h3 {
+  font-weight: 700;
+  font-size: 2rem;
 }
 
-.loc {
-    margin-top: 5%;
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
 
-.faq {
-    margin-top: 5%;
+/* For services icon */
+.services .container .icon-services {
+  background-color: #cfd4ed;
+  border-radius: 50%;
+  color: #0d28a6;
+  padding: 0.2rem;
 }
 
-footer {
-    margin-top: 5%;
-    margin-bottom: 2%;
-}
+/* End For services icon */
 
-.nav-item {
-    padding-top: 5px;
+/* For button getting-started */
+.getting-started .container .btn-light-green {
+  background-color: #5cb85f;
+  color: #ffffff;
+  border-radius: 2px;
 }
+/* End For button getting-started */
 
-.testi {
-    padding-top: 5%;
+.getting-started .container .item-jumbo {
+  background-color: #0d28a6;
+  color: #ffffff;
+  border-radius: 1rem;
+  height: 350px;
 }
