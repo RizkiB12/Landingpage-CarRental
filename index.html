@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- CSS Links -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- MYCSS -->
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
-  </head>
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+
+    <title>Binar Car Rental</title>
+  </head>
   <body>
-    <!--Navigation Bar start-->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./Images/logo.png" alt="Logo" width="100" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <a class="navbar-brand" href="#">Binar Car Rental</a>
+        <button class="btn navbar-toggler border-3 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              <img src="./Images/logo.png" alt="Logo" width="100" />
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas offcanvas-start-lg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header d-flex d-lg-none">
+            <h5 class="offcanvas-title text-dark" id="offcanvasExampleLabel"><img src="./Images/logo.png" alt="logo" /></h5>
+            <a href="javascript:void(0) " class="text-reset p-0" data-bs-dismiss="offcanvas" aria-label="close"> <i class="me-3" data-feather="x"></i></a>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 p">
+          <div class="offcanvas-body p-lg-0">
+            <ul class="navbar-nav ms-auto" style="visibility: visible">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Our Services</a>
+                <a class="nav-link" href="#services">Our Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Why Us</a>
+                <a class="nav-link" href="#why-us">Why Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonial</a>
+                <a class="nav-link" href="#testi">Testimonial</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="#faq">FAQ</a>
               </li>
               <li class="nav-item">
-                <button class="btn btn-outline-success ms-2">Register</button>
+                <button class="btn btn-light-green me-2" type="button">Register</button>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-    <!-- Navigation Bar End -->
+    <!-- End Navbar -->
 
-    <!-- Jumbotron start -->
-
+    <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row mb-5 mt-5">
@@ -68,40 +78,38 @@
             <a class="btn btn-light-green" href="#">Mulai Sewa Mobil</a>
           </div>
           <div class="col-md">
-            <img src="./Images/img_car.png" class="img-fluid img-car" alt="car" />
+            <img src="./Images/img_car.png" class="img-fluid img-car" alt="GambarMobil" />
           </div>
         </div>
       </div>
     </div>
+    <!-- End Jumbotron -->
 
-    <!-- Jumbotron end -->
-
-    <!-- Services start -->
-    <section id="services" class="services">
+    <!-- Services -->
+    <section class="services" id="services">
       <div class="container">
         <div class="row mt-5 pt-5">
           <div class="col-md-6 text-center mt-5">
-            <img src="Images/img_service.png" class="img-fluid" alt="GambarOrang" />
+            <img src="./Images/img_service.png" class="img-fluid" alt="people" />
           </div>
           <div class="col-md-6 mt-5">
             <h3 class="text-jutify mt-4">Best Car Rental for any kind of trip in (Lokasimu)!</h3>
             <p class="mt-4">Sewa mobil di (lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
             <ul class="list-group">
-              <li class="list-group-item border-0"><i class="icon-services me-3" data-feather="check"></i> Sewa Mobil Dengan Supir di Bali 12 Jam</li>
-              <li class="list-group-item border-0"><i class="icon-services me-3" data-feather="check"></i> Sewa Mobil Lepas Kunci di Bali 24 Jam</li>
-              <li class="list-group-item border-0"><i class="icon-services me-3" data-feather="check"></i> Sewa Mobil Jangka Panjang Bulanan</li>
-              <li class="list-group-item border-0"><i class="icon-services me-3" data-feather="check"></i> Gratis Antar - Jemput Mobil di Bandara</li>
-              <li class="list-group-item border-0"><i class="icon-services me-3" data-feather="check"></i> Layanan Airport Transfer / Drop In Out</li>
+              <li class="list-group-item border-0"><i class="icon-check me-3" data-feather="check"></i> Sewa Mobil Dengan Supir di Bali 12 Jam</li>
+              <li class="list-group-item border-0"><i class="icon-check me-3" data-feather="check"></i> Sewa Mobil Lepas Kunci di Bali 24 Jam</li>
+              <li class="list-group-item border-0"><i class="icon-check me-3" data-feather="check"></i> Sewa Mobil Jangka Panjang Bulanan</li>
+              <li class="list-group-item border-0"><i class="icon-check me-3" data-feather="check"></i> Gratis Antar - Jemput Mobil di Bandara</li>
+              <li class="list-group-item border-0"><i class="icon-check me-3" data-feather="check"></i> Layanan Airport Transfer / Drop In Out</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
+    <!-- End Services -->
 
-    <!-- Services End -->
-
-    <!-- Why Us Start -->
-    <section id="why-us" class="why-us">
+    <!-- Why Us -->
+    <section class="why-us" id="why-us">
       <div class="container">
         <div class="row mt-5 pt-3">
           <div class="col-md mt-5">
@@ -114,7 +122,7 @@
           <div class="col-md mb-3">
             <div class="card p-3">
               <div class="card-body">
-                <img src="./Images/thumbs.svg" alt="IconComplete" />
+                <img src="assets/img/icon_complete.png" alt="IconComplete" />
                 <h5 class="card-title mt-3">Mobil Lengkap</h5>
                 <p class="card-text mt-3">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat.</p>
               </div>
@@ -150,11 +158,10 @@
         </div>
       </div>
     </section>
+    <!-- End Why Us -->
 
-    <!-- Why us End -->
-
-    <!-- Testimonial Start -->
-    <section id="testimonial" class="testimonial">
+    <!-- Testimonial -->
+    <section class="testi" id="testi">
       <div class="container">
         <div class="row mt-5 pt-3">
           <div class="col-md mt-5 text-center">
@@ -169,7 +176,7 @@
         <div class="item">
           <div class="row">
             <div class="col-md-3 text-center my-auto">
-              <img src="./Images/testimonial/img_photo-1.png" class="rounded-circle" alt="orang1" />
+              <img src="./Images/testimonial/img_photo-1.png" class="rounded-circle" alt="GambarPhoto1" />
             </div>
             <div class="col-md">
               <div class="bintang">
@@ -188,7 +195,7 @@
         <div class="item">
           <div class="row">
             <div class="col-md-3 text-center my-auto">
-              <img src="./Images/testimonial/img_photo-2.png" class="rounded-circle" alt="orang2" />
+              <img src="./Images/testimonial/img_photo-2.png" class="rounded-circle" alt="GambarPhoto2" />
             </div>
             <div class="col-md">
               <div class="bintang">
@@ -208,7 +215,7 @@
         <div class="item">
           <div class="row">
             <div class="col-md-3 text-center my-auto">
-              <img src="./Images/testimonial/img_photo-2.png" class="rounded-circle" alt="orang3" />
+              <img src="./Images/testimonial/img_photo-3.jpg" class="rounded-circle" alt="GambarPhoto3" />
             </div>
             <div class="col-md">
               <div class="bintang">
@@ -231,18 +238,17 @@
       <div class="container">
         <div class="row mt-3">
           <div class="col text-center">
-            <button class="btn btn btn-left" type="button"><img src="./Images/testimonial/chevron-left.svg" alt="Chevronleft" /></button>
+            <button class="btn btn btn-left" type="button"><img src="./Images/testimonial/chevron-left.svg" alt="Chevron1" /></button>
 
-            <button class="btn btn-light-green btn-right" type="button"><img src="./Images/testimonial/chevron-right.svg" alt="Chevronright" /></button>
+            <button class="btn btn-light-green btn-right" type="button"><img src="./Images/testimonial/chevron-right.svg" alt="Chevron2" /></button>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Testimonial End -->
+    <!-- End Testi -->
 
     <!-- Getting Started -->
-    <section id="getting-started" class="getting-started">
+    <section class="getting-started">
       <div class="container">
         <div class="row mt-5">
           <div class="col-md mt-5">
@@ -255,10 +261,10 @@
         </div>
       </div>
     </section>
-    <!-- Getting Started End -->
+    <!-- End Getting Started -->
 
-    <!-- FAQ Start -->
-    <section id="faq" class="faq">
+    <!-- FAQ -->
+    <section class="faq" id="faq">
       <div class="container">
         <div class="row mt-5 pt-3">
           <div class="col-md-5 mt-5">
@@ -329,46 +335,46 @@
         </div>
       </div>
     </section>
-    <!-- FAQ End -->
+    <!-- End FAQ -->
 
-    <!-- Footer Start -->
-    <section id="footer" class="footer">
+    <!-- Footer -->
+    <section class="footer">
       <div class="container">
         <div class="row mt-5">
           <div class="col-md my-1">
-            <p>Jalan Suroyo No. 161 Mayangan Kota Probolinggo 672000</p>
+            <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
             <p>binarcarrental@gmail.com</p>
             <p>081-233-334-808</p>
           </div>
           <div class="col-md my-1">
             <p><a href="#services" class="text-decoration-none text-dark fw-bold">Our services</a></p>
             <p><a href="#why-us" class="text-decoration-none text-dark fw-bold">Why Us</a></p>
-            <p><a href="#testimonial" class="text-decoration-none text-dark fw-bold">Testimonial</a></p>
+            <p><a href="#testi" class="text-decoration-none text-dark fw-bold">Testimonial</a></p>
             <p><a href="#faq" class="text-decoration-none text-dark fw-bold">FAQ</a></p>
           </div>
           <div class="col-md my-1">
             <p>Connect with us</p>
-            <img src="./Images/footer/icon_facebook.png" alt="Facebook" />
-            <img src="./Images/footer/icon_instagram.png" alt="Instagram" />
-            <img src="./Images/footer/icon_twitter.png" alt="Twitter" />
-            <img src="./Images/footer/icon_mail.png" alt="Mail" />
-            <img src="./Images/footer/icon_twitch.png" alt="Twitch" />
+            <img src="assets/img/icon_facebook.png" alt="Facebook" />
+            <img src="assets/img/icon_instagram.png" alt="Instagram" />
+            <img src="assets/img/icon_twitter.png" alt="Twitter" />
+            <img src="assets/img/icon_mail.png" alt="Mail" />
+            <img src="assets/img/icon_twitch.png" alt="Twitch" />
           </div>
           <div class="col-md my-1">
-            <img src="./Images/logo.png" alt="logo" width="100" class="img-fluid mb-2" />
             <p>Copyright Binar 2022</p>
+            <p>Binar</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer End -->
-
-    <!-- js script -->
-    <script src="./js/script.js"></script>
-
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Boostrap JS -->
+    <script src="/path/to/cdn/bootstrap.bundle.min.js"></script>
 
     <!-- FeatherIcons -->
     <script>
@@ -378,7 +384,7 @@
     <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- My JS -->
+    <script src="js/script.js"></script>
   </body>
 </html>
